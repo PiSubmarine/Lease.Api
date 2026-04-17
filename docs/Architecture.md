@@ -70,3 +70,8 @@ The API is split into narrow ports so components depend only on the operations t
   Used by resource owners at runtime before accepting packets or a resource-specific setup flow.
 - `ILeaseIssuer`
   Used by client-facing protocol adapters that acquire, renew, and release leases.
+
+## Errors
+
+`Lease.Api` defines domain-specific `ErrorCode` values for lease failures such as invalid resource identifiers,
+registration conflicts, lease limits, expiration, and secure lease id generation failures.
