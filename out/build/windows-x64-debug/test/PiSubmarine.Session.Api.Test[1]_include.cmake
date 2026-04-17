@@ -1,0 +1,5 @@
+if(EXISTS "C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug/test/PiSubmarine.Session.Api.Test[1]_tests.cmake")
+  include("C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug/test/PiSubmarine.Session.Api.Test[1]_tests.cmake")
+else()
+  add_test(PiSubmarine.Session.Api.Test_NOT_BUILT PiSubmarine.Session.Api.Test_NOT_BUILT)
+endif()

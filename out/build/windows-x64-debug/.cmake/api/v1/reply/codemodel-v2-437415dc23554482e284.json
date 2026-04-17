@@ -1,0 +1,261 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::GTest::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__GTest-Debug-91ae1c2a0ef6d78dd51e.json",
+					"name" : "GTest::GTest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::Main::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__Main-Debug-722da8d2a3b311f254b8.json",
+					"name" : "GTest::Main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::gmock::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__gmock-Debug-95b07349d48faac921d9.json",
+					"name" : "GTest::gmock",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::gmock_main::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__gmock_main-Debug-534274ee19daeca33d0b.json",
+					"name" : "GTest::gmock_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::gtest::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__gtest-Debug-3f3905c3061f0c1a53a0.json",
+					"name" : "GTest::gtest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "GTest::gtest_main::@36f028580bb02cc8272a",
+					"jsonFile" : "target-GTest__gtest_main-Debug-ab45a841ed16e85219a5.json",
+					"name" : "GTest::gtest_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Git::Git::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Git__Git-Debug-c691dbbbd55d0ed098dd.json",
+					"name" : "Git::Git",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						6
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-src-Debug-1722085f943e0250936a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "_deps/pisubmarine.error.api-build",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"jsonFile" : "directory-_deps.pisubmarine.error.api-build-Debug-9730711ebd20ef3ead79.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "out/build/windows-x64-debug/_deps/pisubmarine.error.api-src"
+				},
+				{
+					"build" : "_deps/pisubmarine.error.api-build/src",
+					"jsonFile" : "directory-_deps.pisubmarine.error.api-build.src-Debug-3c6ea00957bdc34462c1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "out/build/windows-x64-debug/_deps/pisubmarine.error.api-src/src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/pisubmarine.error.api-build/mock",
+					"jsonFile" : "directory-_deps.pisubmarine.error.api-build.mock-Debug-6430874919549fc10101.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "out/build/windows-x64-debug/_deps/pisubmarine.error.api-src/mock"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"build" : "test",
+					"jsonFile" : "directory-test-Debug-6d85f22693d17a73f5fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						6
+					],
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "PiSubmarine.Session.Api",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "PiSubmarine.Error.Api",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "PiSubmarine.Session.Api.Test",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "PiSubmarine.Error.Api::@cb8dc104b78b684ec5db",
+					"jsonFile" : "target-PiSubmarine.Error.Api-Debug-ed70536cce683f9e6175.json",
+					"name" : "PiSubmarine.Error.Api",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "PiSubmarine.Session.Api::@145eef247bfb46b6828c",
+					"jsonFile" : "target-PiSubmarine.Session.Api-Debug-cfe2df9af513f82fbc6f.json",
+					"name" : "PiSubmarine.Session.Api",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "PiSubmarine.Session.Api.Test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-PiSubmarine.Session.Api.Test-Debug-cad0002691da17074295.json",
+					"name" : "PiSubmarine.Session.Api.Test",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug",
+		"source" : "C:/Software/GitHub/PiSubmarine/Session.Api"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug/_deps/pisubmarine.error.api-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
