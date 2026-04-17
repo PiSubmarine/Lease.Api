@@ -17,7 +17,7 @@ set(_build_cmake_local "${pisubmarinebuild_SOURCE_DIR}/PiSubmarine.Build.CMake.c
 
 include("${pisubmarinebuild_SOURCE_DIR}/PiSubmarine.Build.CMake.cmake")
 
-PiSubmarineInitModule("PiSubmarine.Session.Api")
+PiSubmarineInitModule("PiSubmarine.Lease.Api")
 project(${PISUBMARINE_MODULE_NAME})
 enable_testing()
 PiSubmarineConfigureModule()

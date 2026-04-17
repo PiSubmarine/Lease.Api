@@ -2,16 +2,15 @@ include("${_build_cmake_local}")
 
 message("Adding library: ${PISUBMARINE_MODULE_NAME}")
 add_library(${PISUBMARINE_MODULE_NAME} INTERFACE
-        "../public/PiSubmarine/Session/Api/ActivationDescriptor.h"
-        "../public/PiSubmarine/Session/Api/Identifiers.h"
-        "../public/PiSubmarine/Session/Api/ILeaseIssuer.h"
-        "../public/PiSubmarine/Session/Api/ILeaseValidator.h"
-        "../public/PiSubmarine/Session/Api/IResourceRegistry.h"
-        "../public/PiSubmarine/Session/Api/Lease.h"
-        "../public/PiSubmarine/Session/Api/LeasePolicy.h"
-        "../public/PiSubmarine/Session/Api/LeaseRequest.h"
-        "../public/PiSubmarine/Session/Api/LeaseValidation.h"
-        "../public/PiSubmarine/Session/Api/ResourceDescriptor.h"
+        "../public/PiSubmarine/Lease/Api/Identifiers.h"
+        "../public/PiSubmarine/Lease/Api/ILeaseIssuer.h"
+        "../public/PiSubmarine/Lease/Api/ILeaseValidator.h"
+        "../public/PiSubmarine/Lease/Api/IResourceRegistry.h"
+        "../public/PiSubmarine/Lease/Api/Lease.h"
+        "../public/PiSubmarine/Lease/Api/LeasePolicy.h"
+        "../public/PiSubmarine/Lease/Api/LeaseRequest.h"
+        "../public/PiSubmarine/Lease/Api/LeaseValidation.h"
+        "../public/PiSubmarine/Lease/Api/ResourceDescriptor.h"
 )
 target_include_directories(${PISUBMARINE_MODULE_NAME} INTERFACE "../public")
 PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME})

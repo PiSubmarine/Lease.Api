@@ -1,3 +1,0 @@
-add_test([=[SessionApiTest.ResourceDescriptorStoresOpaqueActivationData]=]  C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug/test/PiSubmarine.Session.Api.Test.exe [==[--gtest_filter=SessionApiTest.ResourceDescriptorStoresOpaqueActivationData]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[SessionApiTest.ResourceDescriptorStoresOpaqueActivationData]=]  PROPERTIES DEF_SOURCE_LINE [==[C:\Software\GitHub\PiSubmarine\Session.Api\test\PiSubmarine\Session\Api\SessionApiTest.cpp:8]==] WORKING_DIRECTORY C:/Software/GitHub/PiSubmarine/Session.Api/out/build/windows-x64-debug/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  PiSubmarine.Session.Api.Test_TESTS SessionApiTest.ResourceDescriptorStoresOpaqueActivationData)

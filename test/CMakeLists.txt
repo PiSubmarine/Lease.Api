@@ -5,7 +5,7 @@ include(FetchContent)
 project(${PISUBMARINE_MODULE_NAME}.Test LANGUAGES CXX)
 
 set(${PISUBMARINE_MODULE_NAME}.Test.Sources
-        "PiSubmarine/Session/Api/SessionApiTest.cpp")
+        "PiSubmarine/Lease/Api/LeaseApiTest.cpp")
 
 enable_testing()
 
