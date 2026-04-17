@@ -5,7 +5,8 @@ include(FetchContent)
 project(${PISUBMARINE_MODULE_NAME}.Test LANGUAGES CXX)
 
 set(${PISUBMARINE_MODULE_NAME}.Test.Sources
-        "PiSubmarine/Lease/Api/LeaseApiTest.cpp")
+        "PiSubmarine/Lease/Api/LeaseApiTest.cpp"
+        "PiSubmarine/Lease/Api/LeaseApiMockTest.cpp")
 
 enable_testing()
 
@@ -15,6 +16,7 @@ add_executable(${PISUBMARINE_MODULE_NAME}.Test ${${PISUBMARINE_MODULE_NAME}.Test
 PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME}.Test)
 
 target_link_libraries(${PISUBMARINE_MODULE_NAME}.Test PRIVATE ${PISUBMARINE_MODULE_NAME})
+target_link_libraries(${PISUBMARINE_MODULE_NAME}.Test PRIVATE ${PISUBMARINE_MODULE_NAME}.Mock)
 target_link_libraries(${PISUBMARINE_MODULE_NAME}.Test PRIVATE GTest::gtest_main)
 include(GoogleTest)
 gtest_discover_tests(${PISUBMARINE_MODULE_NAME}.Test)
