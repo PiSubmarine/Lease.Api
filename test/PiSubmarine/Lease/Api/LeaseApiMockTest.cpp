@@ -54,8 +54,7 @@ namespace PiSubmarine::Lease::Api
             .Id = resourceId,
             .Policy = LeasePolicy{
                 .MaxLeases = std::nullopt,
-                .LeaseDuration = std::chrono::seconds(5),
-                .RequiresActivation = false}};
+                .LeaseDuration = std::chrono::seconds(5)}};
 
         EXPECT_CALL(resourceRegistryMock, GetResource(resourceId))
             .WillOnce(testing::Return(Error::Api::Result<ResourceDescriptor>(expectedDescriptor)));

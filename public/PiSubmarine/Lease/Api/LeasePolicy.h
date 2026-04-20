@@ -10,7 +10,6 @@ namespace PiSubmarine::Lease::Api
     {
         std::optional<std::size_t> MaxLeases = 1;
         std::chrono::milliseconds LeaseDuration{0};
-        bool RequiresActivation = true;
 
         [[nodiscard]] bool operator==(const LeasePolicy&) const = default;
     };

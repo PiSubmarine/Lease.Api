@@ -44,12 +44,8 @@ The first version of the API keeps policy intentionally small:
 - `MaxLeases = N > 1`: bounded shared access
 - `MaxLeases = std::nullopt`: unlimited shared access
 - `LeaseDuration`
-- `RequiresActivation`
 
 This keeps the API generic without introducing stream-specific roles such as operator or viewer.
-
-`RequiresActivation` means the resource owner expects an additional resource-specific setup step after lease grant.
-That setup remains outside `Lease.Api`.
 
 ## Intended Layering
 
