@@ -2,6 +2,7 @@ include("${_build_cmake_local}")
 
 add_library(${PISUBMARINE_MODULE_NAME}.Mock INTERFACE
         PiSubmarine/Lease/Api/ILeaseIssuerMock.h
+        PiSubmarine/Lease/Api/ILeaseSecretProviderMock.h
         PiSubmarine/Lease/Api/ILeaseValidatorMock.h
         PiSubmarine/Lease/Api/IResourceRegistryMock.h)
 target_include_directories(${PISUBMARINE_MODULE_NAME}.Mock INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")

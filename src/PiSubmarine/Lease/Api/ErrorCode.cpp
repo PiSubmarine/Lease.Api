@@ -22,6 +22,9 @@ namespace PiSubmarine::Lease::Api
                 case ErrorCode::InvalidLeaseId:
                     return "lease id must not be empty";
 
+                case ErrorCode::InvalidLeaseSecret:
+                    return "lease secret must not be empty";
+
                 case ErrorCode::InvalidLeaseDuration:
                     return "lease duration must be positive";
 
@@ -45,6 +48,9 @@ namespace PiSubmarine::Lease::Api
 
                 case ErrorCode::LeaseIdGenerationFailed:
                     return "failed to generate a secure lease id";
+
+                case ErrorCode::LeaseSecretGenerationFailed:
+                    return "failed to generate a lease secret";
                 }
 
                 return "unknown lease api error";

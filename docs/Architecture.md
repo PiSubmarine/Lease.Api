@@ -36,6 +36,9 @@ Leases:
 - may be released explicitly
 - are validated by resource owners before use
 
+Lease acquisition may additionally return an opaque per-lease secret. This secret is intended for transport-security
+helpers such as UDP AEAD, while the lease id remains the domain-visible handle used for validation and resource ownership.
+
 ### Lease Policy
 
 The first version of the API keeps policy intentionally small:
@@ -66,6 +69,9 @@ The API is split into narrow ports so components depend only on the operations t
   Used by resource owners at runtime before accepting packets or a resource-specific setup flow.
 - `ILeaseIssuer`
   Used by client-facing protocol adapters that acquire, renew, and release leases.
+- `ILeaseSecretProvider`
+  Used by server-side transport or protocol code that needs lease-associated secret material without moving that concern
+  into domain controllers.
 
 ## Errors
 

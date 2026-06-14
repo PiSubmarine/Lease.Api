@@ -8,6 +8,7 @@ namespace PiSubmarine::Lease::Api
     {
         InvalidResourceId = 1,
         InvalidLeaseId,
+        InvalidLeaseSecret,
         InvalidLeaseDuration,
         InvalidMaxLeases,
         ResourceAlreadyRegistered,
@@ -15,7 +16,8 @@ namespace PiSubmarine::Lease::Api
         LeaseLimitReached,
         LeaseNotFound,
         LeaseExpired,
-        LeaseIdGenerationFailed
+        LeaseIdGenerationFailed,
+        LeaseSecretGenerationFailed
     };
 
     [[nodiscard]] std::error_code make_error_code(ErrorCode errorCode) noexcept;
