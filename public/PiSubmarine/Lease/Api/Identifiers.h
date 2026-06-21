@@ -4,6 +4,7 @@
 
 namespace PiSubmarine::Lease::Api
 {
+	// TODO Split into ResourceId.h and LeaseId.h
     struct ResourceId
     {
         std::string Value;
