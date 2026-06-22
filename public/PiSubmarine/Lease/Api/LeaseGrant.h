@@ -7,7 +7,7 @@ namespace PiSubmarine::Lease::Api
 {
     struct LeaseGrant
     {
-        Lease Lease;
+        Lease GrantedLease;
         LeaseSecret Secret;
 
         [[nodiscard]] bool operator==(const LeaseGrant&) const = default;

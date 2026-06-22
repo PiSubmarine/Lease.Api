@@ -19,7 +19,7 @@ namespace PiSubmarine::Lease::Api
         const LeaseRequest request{
             .Resource = ResourceId{"control-main"}};
         const LeaseGrant expectedGrant{
-            .Lease = Lease{
+            .GrantedLease = Lease{
                 .Id = LeaseId{"lease-1"},
                 .Resource = ResourceId{"control-main"},
                 .Duration = std::chrono::seconds(3)},

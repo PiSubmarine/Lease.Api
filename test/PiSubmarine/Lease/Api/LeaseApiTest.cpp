@@ -26,15 +26,15 @@ namespace PiSubmarine::Lease::Api
     TEST(LeaseApiTest, LeaseGrantStoresLeaseAndSecret)
     {
         const LeaseGrant grant{
-            .Lease = Lease{
+            .GrantedLease = Lease{
                 .Id = LeaseId{"lease-1"},
                 .Resource = ResourceId{"telemetry-main"},
                 .Duration = std::chrono::seconds(5)},
             .Secret = LeaseSecret{
                 .Value = {std::byte{0x01}, std::byte{0x02}, std::byte{0x03}}}};
 
-        EXPECT_EQ(grant.Lease.Id.Value, "lease-1");
-        EXPECT_EQ(grant.Lease.Resource.Value, "telemetry-main");
+        EXPECT_EQ(grant.GrantedLease.Id.Value, "lease-1");
+        EXPECT_EQ(grant.GrantedLease.Resource.Value, "telemetry-main");
         ASSERT_EQ(grant.Secret.Value.size(), 3U);
         EXPECT_EQ(grant.Secret.Value[0], std::byte{0x01});
     }
